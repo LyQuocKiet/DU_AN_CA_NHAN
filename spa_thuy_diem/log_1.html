@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LyQuocKiet/DU_AN_CA_NHAN.git
+git push -u origin main
+
+
+git remote add origin https://github.com/LyQuocKiet/DU_AN_CA_NHAN.git
+git branch -M main
+git push -u origin main
+    </p>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imag_main/spa_main.png" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="imag_main/spa_main.png" alt="Image 2"></div>
+            <div class="swiper-slide"><img src="imag_main/spa_main.pngs" alt="Image 3"></div>
+            <!-- Add more images here -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

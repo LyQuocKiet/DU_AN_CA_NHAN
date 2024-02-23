@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-image: src="background.jpg"; Đường dẫn đến hình ảnh nền */
+    background-size: cover; /* Chỉnh kích thước hình ảnh để nó phủ toàn bộ background */
+    background-position: center; /* Đặt vị trí hiển thị hình ảnh ở giữa */
+    background-repeat: no-repeat; /* Ngăn lặp lại hình ảnh nếu kích thước trang vượt quá */
+
+}
+.bottom-menu {
+    position: fixed;
+    bottom: 40;
+    width: 100%;
+    background-color: #b1c5f5; /* Tuỳ chỉnh màu nền của menu */
+    /* z-index: 999; Đảm bảo menu hiển thị trên các phần tử khác trên trang */
+}
+
+.slider-container {
+    width: 100%;
+    height: 100vh; /* Chiều cao của slider bằng chiều cao của trình duyệt */
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hiển thị hình ảnh mà không bị méo */
+}
+
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    height: 100px;
+}
+.logo{
+    flex: 1;
+    padding: 0 10px;
+}
+.menu{
+    padding: 30px 20px;
+    flex: 3;
+    display: flex;
+}
+.menu > li{
+    padding: 0 30px;
+
+}
+.other{
+    flex: 1;
+    display: flex;
+}
+
+.other>li{
+    padding: 0 12px;
+}
